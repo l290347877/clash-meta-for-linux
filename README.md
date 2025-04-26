@@ -124,7 +124,7 @@ $ proxy_off
 
 <br>
 
-## 配置TUN模式
+## 配置TUN模式（可选示例）
 - 手动修改config.yaml文件
 
 ```bash
