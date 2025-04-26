@@ -87,6 +87,10 @@ https_proxy=http://127.0.0.1:7890
 
 以上步鄹如果正常，说明服务clash程序启动成功，现在就可以体验高速下载github资源了。
 
+- 异常排查
+
+如果 http://<ip>:9090/ui 无法访问，请检查`conf/config.yaml`文件是否正确，或者查看日志文件`logs/clash.log`。
+
 <br>
 
 ## 重启程序
