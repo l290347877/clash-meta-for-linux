@@ -172,11 +172,11 @@ tun:
 
 ```
 
+- 重启服务
 
-
-
-
-
+```bash
+$ sudo bash restart.sh
+```
 
 
 ## Clash Dashboard
