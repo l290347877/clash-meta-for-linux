@@ -141,29 +141,22 @@ $ vim conf/config.yaml
 dns:
   enable: true
   ipv6: false
-  default-nameserver:
-  - 223.5.5.5
-  - 119.29.29.29
-  - 8.8.4.4
-  - 8.8.8.8
-  - 114.114.114.114
-  - 1.0.0.1
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  use-hosts: true
   nameserver:
-  - https://doh.pub/dns-query
-  - https://dns.alidns.com/dns-query
+    - 223.5.5.5        # 阿里DNS
+    - 119.29.29.29     # 腾讯DNS
+    - https://doh.pub/dns-query         # 腾讯 DoH
+    - https://dns.alidns.com/dns-query  # 阿里 DoH
   fallback:
-  - https://doh.dns.sb/dns-query
-  - https://dns.cloudflare.com/dns-query
-  - https://dns.twnic.tw/dns-query
-  - tls://8.8.4.4:853
+    - https://dns.cloudflare.com/dns-query
+    - tls://1.1.1.1:853
+    - tls://8.8.4.4:853
   fallback-filter:
     geoip: true
     ipcidr:
-    - 240.0.0.0/4
-    - 0.0.0.0/32
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 
       
 tun:
